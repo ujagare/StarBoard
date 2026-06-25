@@ -8,8 +8,9 @@ vite-*.log
 vite-dev-*
 vite-live-*
 vite-motion-*
-*.png
-*.mp4
-*.jpeg
+12212956_3840_2160_30fps.mp4
+Favicon/*.png
 motion-*
 text-reveal-*
+prod-starboard-screenshot.png
+local-preview-screenshot.png
