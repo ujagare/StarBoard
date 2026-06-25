@@ -1549,7 +1549,39 @@
   }
 
   .opportunity-card {
-    width: 82%;
+    width: 78%;
+  }
+
+  .opportunity-card > .relative {
+    height: 190px;
+  }
+
+  .opportunity-card > .p-5 {
+    padding: 14px;
+  }
+
+  .opportunity-card h3 {
+    font-size: 1rem;
+    line-height: 1.15;
+  }
+
+  .opportunity-card p.mt-3 {
+    min-height: 0;
+    margin-top: 8px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .opportunity-card p.mt-5 {
+    margin-top: 12px;
+    font-size: 1.35rem;
+    line-height: 1.1;
+  }
+
+  .opportunity-card .opportunity-brochure {
+    margin-top: 12px;
+    padding: 10px 12px;
+    font-size: 0.62rem;
   }
 
   .testimonial-marquee article {
