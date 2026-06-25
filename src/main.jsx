@@ -25,7 +25,7 @@ import "./styles.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const heroImage = new URL("../ChatGPT Image Jun 23, 2026, 04_07_03 PM.png", import.meta.url).href;
-const heroVideo = "/videos/12212956_3840_2160_30fps.mp4";
+const heroVideo = "/videos/hero.mp4";
 const aboutImage = new URL("../ChatGPT Image Jun 23, 2026, 04_35_12 PM.png", import.meta.url).href;
 const markLogo = new URL("../logo.jpeg", import.meta.url).href;
 const starboardPosition = [73.8053755, 18.5658104];
