@@ -291,7 +291,7 @@ const faqs = [
 
 function Logo({ compact = false }) {
   return (
-    <a href="#home" className="flex items-center gap-3">
+    <a href="#home" className="flex items-center gap-2">
       <img src={markLogo} alt="Starboard Realtors mark" className={compact ? "h-12 w-12 object-cover" : "h-12 w-12 object-cover sm:h-16 sm:w-16"} />
       <div className="leading-none">
         <div className="font-serif text-[1.08rem] uppercase tracking-[0.12em] text-gold sm:text-[1.45rem]">Starboard</div>
@@ -488,7 +488,7 @@ function App() {
           </button>
         </div>
         <div className={`mobile-menu-panel xl:hidden ${isMobileMenuOpen ? "is-open" : ""}`}>
-          <div className="mb-5 flex items-center gap-3 border-b border-gold/18 pb-5">
+          <div className="mb-5 flex items-center gap-2 border-b border-gold/18 pb-5">
             <img src={markLogo} alt="" className="h-11 w-11 object-cover" />
             <div>
               <p className="font-serif text-lg uppercase tracking-[0.13em] text-gold">Starboard</p>
