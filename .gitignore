@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.log
+*.err
+*.out
+chrome-cdp*
+vite-*.log
+vite-dev-*
+vite-live-*
+vite-motion-*
+*.png
+*.mp4
+*.jpeg
+motion-*
+text-reveal-*
