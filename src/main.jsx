@@ -27,7 +27,7 @@ gsap.registerPlugin(ScrollTrigger);
 const heroImage = new URL("../ChatGPT Image Jun 23, 2026, 04_07_03 PM.png", import.meta.url).href;
 const heroVideo = "/videos/hero.mp4";
 const aboutImage = new URL("../ChatGPT Image Jun 23, 2026, 04_35_12 PM.png", import.meta.url).href;
-const markLogo = new URL("../logo.jpeg", import.meta.url).href;
+const markLogo = new URL("../New logo.png", import.meta.url).href;
 const starboardPosition = [73.8053755, 18.5658104];
 const starboardDirectionsUrl = "https://maps.app.goo.gl/odvkAjdkLbd5YDaz7";
 
@@ -295,7 +295,7 @@ function Logo({ compact = false }) {
       <img src={markLogo} alt="Starboard Realtors mark" className={compact ? "h-12 w-12 object-cover" : "h-12 w-12 object-cover sm:h-16 sm:w-16"} />
       <div className="leading-none">
         <div className="font-serif text-[1.08rem] uppercase tracking-[0.12em] text-gold sm:text-[1.45rem]">Starboard</div>
-        <div className="mt-1 text-[0.58rem] uppercase tracking-[0.32em] text-white sm:text-[0.7rem] sm:tracking-[0.45em]">Realtors</div>
+        <div className="mt-1 text-[0.58rem] uppercase tracking-[0.32em] text-royal sm:text-[0.7rem] sm:tracking-[0.45em]">Realtors</div>
       </div>
     </a>
   );
@@ -463,13 +463,13 @@ function App() {
           }}
         />
       )}
-      <main ref={rootRef} className="site-shell min-h-screen overflow-hidden bg-royal text-white">
-      <header className="site-navbar fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-royal/78 backdrop-blur-xl">
+      <main ref={rootRef} className="site-shell min-h-screen overflow-hidden bg-ivory text-royal">
+      <header className="site-navbar fixed left-0 right-0 top-0 z-50 border-b border-royal/10 bg-ivory/92 backdrop-blur-xl">
         <div className="flex h-[86px] w-full items-center justify-between px-6 lg:px-12">
           <Logo />
           <nav className="hidden items-center gap-8 xl:flex">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase().replace(" ", "-")}`} className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/88 transition hover:text-gold">
+              <a key={item} href={`#${item.toLowerCase().replace(" ", "-")}`} className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-royal/88 transition hover:text-gold">
                 {item}
               </a>
             ))}
@@ -492,7 +492,7 @@ function App() {
             <img src={markLogo} alt="" className="h-11 w-11 object-cover" />
             <div>
               <p className="font-serif text-lg uppercase tracking-[0.13em] text-gold">Starboard</p>
-              <p className="text-[0.58rem] uppercase tracking-[0.38em] text-white/70">Realtors</p>
+              <p className="text-[0.58rem] uppercase tracking-[0.38em] text-royal/70">Realtors</p>
             </div>
           </div>
           <nav className="grid gap-2">
@@ -527,18 +527,16 @@ function App() {
           <video className="h-full w-full object-cover" autoPlay muted loop playsInline poster={heroImage} aria-label="Luxury real estate skyline video">
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#020E1E_0%,rgba(2,14,30,0.92)_20%,rgba(2,14,30,0.42)_43%,transparent_68%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(180deg,transparent,#020E1E_100%)]" />
         </div>
 
         <div className="compass-watermark pointer-events-none absolute -left-28 top-64 h-72 w-72 border border-gold/10 opacity-30 [clip-path:polygon(50%_0,58%_42%,100%_50%,58%_58%,50%_100%,42%_58%,0_50%,42%_42%)]" />
 
         <div className="relative grid min-h-[774px] w-full content-center px-6 py-16 lg:px-12">
           <div className="hero-copy max-w-[620px]">
-            <h1 className="hero-title-premium text-[3.9rem] uppercase leading-[0.98] text-white sm:text-[5.4rem]">
+            <h1 className="hero-title-premium text-[3.9rem] uppercase leading-[0.98] text-royal sm:text-[5.4rem]">
               Curating Exceptional <span className="block text-gold">Spaces</span>
             </h1>
-            <p className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-white/90">
+            <p className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-royal/90">
               <span>Commercial Real Estate</span>
               <span className="text-gold">.</span>
               <span>Luxury Residences</span>
@@ -549,7 +547,7 @@ function App() {
               <a href="#properties" className="bg-gold px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-royal shadow-gold transition hover:bg-goldLight">
                 Explore Opportunities
               </a>
-              <a href="#contact" className="premium-border px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:border-gold hover:text-gold">
+              <a href="#contact" className="premium-border px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-royal transition hover:border-gold hover:text-gold">
                 Schedule Consultation
               </a>
             </div>
@@ -557,7 +555,7 @@ function App() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 py-8">
+      <section className="border-b border-royal/10 py-8">
         <div className="w-full px-6 lg:px-12">
           <div className="mb-7 flex items-center justify-center gap-4">
             <span className="h-px w-20 bg-gold/40" />
@@ -576,13 +574,13 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="relative border-b border-white/10 py-14">
+      <section id="about" className="relative border-b border-royal/10 py-14">
         <div className="grid w-full items-center gap-12 px-6 lg:grid-cols-[1fr_1.1fr_0.6fr] lg:px-12">
           <img src={aboutImage} alt="Pune skyline at night" className="reveal h-[250px] w-full rounded-md object-cover opacity-90 shadow-2xl" />
           <div className="reveal border-x border-gold/18 px-0 lg:px-12">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.34em] text-gold">About Starboard Realtors</p>
             <h2 className="faq-gold-heading font-serif text-4xl leading-tight md:text-5xl">Pune's Boutique Real Estate Advisory Firm</h2>
-            <p className="mt-6 max-w-3xl text-sm leading-7 text-white/76">
+            <p className="mt-6 max-w-3xl text-sm leading-7 text-royal/76">
               We specialize in commercial real estate, retail spaces, investment opportunities, and luxury residential properties across Pune. With deep market knowledge and a client-centric approach, we deliver tailored real estate solutions that create long-term value.
             </p>
             <a href="#why-us" className="mt-7 inline-flex items-center gap-3 border border-gold/55 px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-gold transition hover:bg-gold hover:text-royal">
@@ -595,7 +593,7 @@ function App() {
         </div>
       </section>
 
-      <section id="founder" className="w-full border-b border-white/10 px-6 py-10 lg:px-12">
+      <section id="founder" className="w-full border-b border-royal/10 px-6 py-10 lg:px-12">
         <div className="founder-panel premium-border reveal">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.36em] text-gold">A Word From The Founder</p>
@@ -617,11 +615,11 @@ function App() {
       </section>
 
       <section id="services" className="w-full px-6 py-8 lg:px-12">
-        <div className="services-premium-panel premium-border relative rounded-lg bg-white/[0.018] px-5 pb-6 pt-10 md:px-7 md:pb-8">
+        <div className="services-premium-panel premium-border relative rounded-lg bg-[#fbf4eb] px-5 pb-6 pt-10 md:px-7 md:pb-8">
           <p className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-royal px-5 text-center text-xs font-semibold uppercase tracking-[0.36em] text-gold">Our Services</p>
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <h2 className="faq-gold-heading font-serif text-3xl leading-tight md:text-5xl">Discreet real estate advisory for premium decisions.</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/64">
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-royal/64">
               From commercial strategy to luxury residences, every mandate is handled with research, discretion, and a sharp eye for long-term value.
             </p>
           </div>
@@ -629,12 +627,12 @@ function App() {
         </div>
       </section>
 
-      <section id="developer-network" className="developer-network-section border-b border-white/10 px-6 py-10 lg:px-12">
+      <section id="developer-network" className="developer-network-section border-b border-royal/10 px-6 py-10 lg:px-12">
         <div className="developer-network-panel premium-border rounded-lg px-5 py-9 md:px-8">
           <div className="reveal mx-auto max-w-4xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.38em] text-gold">Developer Network & Strategic Partnerships</p>
             <h2 className="faq-gold-heading mt-4 font-serif text-4xl leading-tight md:text-5xl">Trusted Access to Pune's Leading Developers</h2>
-            <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-white/68">
+            <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-royal/68">
               Access to 100+ premium projects across Pune through our extensive developer network, spanning residential, commercial, retail, and investment opportunities.
             </p>
           </div>
@@ -648,14 +646,14 @@ function App() {
               ))}
             </div>
           </div>
-          <p className="reveal mx-auto mt-7 max-w-4xl text-center text-[0.72rem] uppercase leading-6 tracking-[0.18em] text-white/46">
+          <p className="reveal mx-auto mt-7 max-w-4xl text-center text-[0.72rem] uppercase leading-6 tracking-[0.18em] text-royal/46">
             Network access communicates market reach, channel relationships, and project availability. It does not imply exclusive representation or formal affiliation unless specifically authorized.
           </p>
         </div>
       </section>
 
       <section id="properties" className="grid w-full gap-7 px-6 py-4 lg:grid-cols-[0.9fr_2.2fr] lg:px-12">
-        <aside id="why-us" className="why-compact-panel reveal premium-border relative overflow-hidden rounded-lg bg-white/[0.018] p-6">
+        <aside id="why-us" className="why-compact-panel reveal premium-border relative overflow-hidden rounded-lg bg-[#fbf4eb] p-6">
           <div className="absolute right-2 top-20 h-40 w-40 border border-gold/10 opacity-25 [clip-path:polygon(50%_0,58%_42%,100%_50%,58%_58%,50%_100%,42%_58%,0_50%,42%_42%)]" />
           <p className="relative text-[0.62rem] font-bold uppercase tracking-[0.32em] text-gold">Why Clients Choose Us</p>
           <h2 className="faq-gold-heading relative mt-3 font-serif text-2xl leading-tight">Premium advisory with discreet execution.</h2>
@@ -683,14 +681,14 @@ function App() {
           </div>
           <div ref={opportunitiesRef} className="opportunities-carousel">
             {opportunities.map((item) => (
-              <article key={item.title} className="opportunity-card reveal group premium-border shrink-0 overflow-hidden rounded-lg bg-[#041733] shadow-card">
+              <article key={item.title} className="opportunity-card reveal group premium-border shrink-0 overflow-hidden rounded-lg bg-[#fbf4eb] shadow-card">
                 <div className="relative h-72 overflow-hidden">
                   <img src={opportunityAsset(item.image)} alt={item.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-royal via-royal/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-royal/72 via-royal/10 to-transparent" />
                 </div>
                 <div className="p-5">
                   <h3 className="text-xl font-semibold uppercase leading-tight tracking-[0.04em]">{item.title}</h3>
-                  <p className="mt-3 min-h-12 text-sm leading-6 text-white/64">{item.meta}</p>
+                  <p className="mt-3 min-h-12 text-sm leading-6 text-royal/64">{item.meta}</p>
                   <p className="mt-5 font-serif text-2xl text-gold">{item.price}</p>
                   {item.brochure && (
                     <a href={item.brochure} target="_blank" rel="noreferrer" className="opportunity-brochure mt-5 inline-flex items-center justify-center gap-2 px-4 py-3 text-[0.68rem] font-bold uppercase tracking-[0.16em]">
@@ -705,12 +703,12 @@ function App() {
       </section>
 
       <section className="w-full px-6 py-4 lg:px-12">
-        <div className="achievements-grid premium-border grid gap-0 rounded-lg bg-white/[0.018] md:grid-cols-2 xl:grid-cols-6">
+        <div className="achievements-grid premium-border grid gap-0 rounded-lg bg-[#fbf4eb] md:grid-cols-2 xl:grid-cols-6">
           {achievements.map(({ value, label, icon }) => (
             <div key={label} className="reveal border-gold/15 p-7 text-center xl:border-r last:border-r-0">
               <img src={iconAsset(icon)} alt="" className="mx-auto mb-3 h-24 w-24 object-cover mix-blend-screen brightness-125 contrast-125" />
               <div className="font-serif text-4xl text-gold">{value}</div>
-              <p className="mx-auto mt-2 max-w-44 text-sm leading-5 text-white/78">{label}</p>
+              <p className="mx-auto mt-2 max-w-44 text-sm leading-5 text-royal/78">{label}</p>
             </div>
           ))}
         </div>
@@ -721,16 +719,16 @@ function App() {
         <div className="testimonial-marquee reveal">
           <div className="testimonial-marquee-track">
             {[...testimonials, ...testimonials].map((item, index) => (
-              <article key={`${item.name}-${index}`} className="premium-border relative min-h-[240px] w-[420px] shrink-0 rounded-lg bg-white/[0.025] p-7">
+              <article key={`${item.name}-${index}`} className="premium-border relative min-h-[240px] w-[420px] shrink-0 rounded-lg bg-[#fbf4eb] p-7">
                 <div className="flex items-center gap-4">
                   <div className="grid h-16 w-16 place-items-center rounded-full bg-gold/16 text-xl font-bold text-gold">{item.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}</div>
                   <div>
-                    <h3 className="font-semibold text-white">{item.name}</h3>
+                    <h3 className="font-semibold text-royal">{item.name}</h3>
                     <p className="text-xs text-gold">{item.role}</p>
-                    <p className="text-xs text-white/55">{item.firm}</p>
+                    <p className="text-xs text-royal/55">{item.firm}</p>
                   </div>
                 </div>
-                <p className="mt-6 text-sm leading-7 text-white/76">{item.quote}</p>
+                <p className="mt-6 text-sm leading-7 text-royal/76">{item.quote}</p>
                 <div className="mt-5 flex gap-1 text-gold">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Star key={`${index}-${starIndex}`} size={14} fill="currentColor" />
@@ -748,7 +746,7 @@ function App() {
             <div className="reveal">
               <p className="text-xs font-semibold uppercase tracking-[0.36em] text-gold">FAQ</p>
               <h2 className="faq-gold-heading mt-4 font-serif text-4xl leading-tight md:text-5xl">Premium Real Estate Guidance, Clearly Answered</h2>
-              <p className="mt-5 max-w-xl text-sm leading-7 text-white/68">
+              <p className="mt-5 max-w-xl text-sm leading-7 text-royal/68">
                 Helpful answers for clients exploring commercial, investment, and luxury residential opportunities with Starboard Realtors.
               </p>
             </div>
@@ -756,10 +754,10 @@ function App() {
               {faqs.map((faq, index) => (
                 <details key={faq.question} className="faq-gold-item group rounded-md px-5 py-4" open={index === 0}>
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-5 text-left">
-                    <span className="text-sm font-semibold uppercase tracking-[0.08em] text-white">{faq.question}</span>
+                    <span className="text-sm font-semibold uppercase tracking-[0.08em] text-royal">{faq.question}</span>
                     <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-gold/35 font-serif text-2xl leading-none text-gold transition group-open:rotate-45">+</span>
                   </summary>
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-white/68">{faq.answer}</p>
+                  <p className="mt-4 max-w-3xl text-sm leading-7 text-royal/68">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -775,10 +773,10 @@ function App() {
               <h2 className="faq-gold-heading mt-4 font-serif text-4xl leading-tight md:text-5xl">
                 Begin Your Premium Property Conversation
               </h2>
-              <p className="mt-5 max-w-xl text-sm leading-7 text-white/68">
+              <p className="mt-5 max-w-xl text-sm leading-7 text-royal/68">
                 Share your requirement and our advisory team will help curate commercial, investment, or luxury residential opportunities aligned to your goals.
               </p>
-              <div className="mt-8 grid gap-4 text-sm text-white/78">
+              <div className="mt-8 grid gap-4 text-sm text-royal/78">
                 <p className="flex items-center gap-3"><Phone className="text-gold" size={18} /> +91 9769494723</p>
                 <p className="flex items-center gap-3"><Mail className="text-gold" size={18} /> connect@starboardrealtors.co.in</p>
                 <p className="flex items-start gap-3"><MapPin className="mt-0.5 text-gold" size={18} /> Aundh, Pune - premium advisory by appointment</p>
@@ -822,13 +820,13 @@ function App() {
       </section>
 
       <section id="location-map" className="w-full px-6 py-8 lg:px-12">
-        <div className="premium-border overflow-hidden rounded-lg bg-[#020B18]">
+        <div className="premium-border overflow-hidden rounded-lg bg-[#fbf4eb]">
           <div className="flex flex-col gap-3 border-b border-gold/55 px-6 py-5 md:flex-row md:items-end md:justify-between lg:px-8">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.36em] text-gold">Location</p>
               <h2 className="faq-gold-heading mt-2 font-serif text-3xl md:text-4xl">Visit Starboard Realtors, Aundh</h2>
             </div>
-            <p className="max-w-xl text-sm leading-6 text-white/64">201, 2nd Floor, Nandan Aspira, Opp. Ankura Hospital, Nagras Road, Aundh, Pune - 411007</p>
+            <p className="max-w-xl text-sm leading-6 text-royal/64">201, 2nd Floor, Nandan Aspira, Opp. Ankura Hospital, Nagras Road, Aundh, Pune - 411007</p>
           </div>
           <div className="full-map">
             <Map center={starboardPosition} zoom={15} className="h-full min-h-[440px] w-full" theme="dark">
@@ -844,7 +842,7 @@ function App() {
                 >
                   <div className="space-y-3 pr-5">
                     <h3 className="font-serif text-lg font-semibold uppercase tracking-[0.08em] text-gold">Starboard Realtors</h3>
-                    <p className="text-sm leading-6 text-white/72">
+                    <p className="text-sm leading-6 text-royal/72">
                       201, 2nd Floor, Nandan Aspira, Opp. Ankura Hospital, Nagras Road, Aundh, Pune - 411007
                     </p>
                     <a
@@ -887,7 +885,7 @@ function App() {
           <div className="footer-column">
             <Logo compact />
             <p className="mt-5 text-xs uppercase tracking-[0.26em] text-gold">Curating Exceptional Spaces</p>
-            <p className="mt-5 max-w-sm text-sm leading-7 text-white/62">
+            <p className="mt-5 max-w-sm text-sm leading-7 text-royal/62">
               Boutique real estate advisory for premium commercial, investment, and luxury residential opportunities across Pune.
             </p>
             <div className="mt-7 flex gap-4 text-gold">
@@ -900,7 +898,7 @@ function App() {
           </div>
           <div className="footer-column">
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.3em] text-gold">Contact Us</h3>
-            <div className="space-y-4 text-sm text-white/80">
+            <div className="space-y-4 text-sm text-royal/80">
               <p className="footer-info"><Phone className="shrink-0 text-gold" size={18} />+91 9769494723</p>
               <p className="footer-info"><Mail className="shrink-0 text-gold" size={18} />connect@starboardrealtors.co.in</p>
               <p className="footer-info"><MapPin className="shrink-0 text-gold" size={18} />201, 2nd Floor, Nandan Aspira Opp. Ankura Hospital, Nagras Road, Aundh, Pune - 411007</p>
@@ -926,7 +924,7 @@ function App() {
           </div>
           </div>
         </div>
-        <p className="py-5 text-center text-[0.68rem] uppercase tracking-[0.3em] text-white/42">© 2026 Starboard Realtors. All Rights Reserved.</p>
+        <p className="py-5 text-center text-[0.68rem] uppercase tracking-[0.3em] text-royal/42">© 2026 Starboard Realtors. All Rights Reserved.</p>
       </footer>
     </main>
     </>
