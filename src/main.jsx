@@ -527,12 +527,13 @@ function App() {
           <video className="h-full w-full object-cover" autoPlay muted loop playsInline poster={heroImage} aria-label="Luxury real estate skyline video">
             <source src={heroVideo} type="video/mp4" />
           </video>
+          <div className="hero-text-gradient absolute inset-0" />
         </div>
 
         <div className="compass-watermark pointer-events-none absolute -left-28 top-64 h-72 w-72 border border-gold/10 opacity-30 [clip-path:polygon(50%_0,58%_42%,100%_50%,58%_58%,50%_100%,42%_58%,0_50%,42%_42%)]" />
 
         <div className="relative grid min-h-[774px] w-full content-center px-6 py-16 lg:px-12">
-          <div className="hero-copy max-w-[620px]">
+          <div className="hero-copy hero-text-panel max-w-[620px]">
             <h1 className="hero-title-premium text-[3.9rem] uppercase leading-[0.98] text-royal sm:text-[5.4rem]">
               Curating Exceptional <span className="block text-gold">Spaces</span>
             </h1>
@@ -576,7 +577,7 @@ function App() {
 
       <section id="about" className="relative border-b border-royal/10 py-14">
         <div className="grid w-full items-center gap-12 px-6 lg:grid-cols-[1fr_1.1fr_0.6fr] lg:px-12">
-          <img src={aboutImage} alt="Pune skyline at night" className="reveal h-[250px] w-full rounded-md object-cover opacity-90 shadow-2xl" />
+          <img src={aboutImage} alt="Pune skyline at night" className="reveal h-[340px] w-full rounded-md object-cover opacity-90 shadow-2xl lg:h-[430px]" />
           <div className="reveal border-x border-gold/18 px-0 lg:px-12">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.34em] text-gold">About Starboard Realtors</p>
             <h2 className="faq-gold-heading font-serif text-4xl leading-tight md:text-5xl">Pune's Boutique Real Estate Advisory Firm</h2>
@@ -639,7 +640,11 @@ function App() {
           <div className="developer-marquee reveal mt-9">
             <div className="developer-marquee-track">
               {[...builderLogos, ...builderLogos].map((logo, index) => (
-                <div key={`${logo.name}-${index}`} className="developer-logo" aria-hidden={index >= builderLogos.length}>
+                <div
+                  key={`${logo.name}-${index}`}
+                  className={`developer-logo ${["Lodha Group", "Nandan Buildcon"].includes(logo.name) ? "developer-logo-large" : ""}`}
+                  aria-hidden={index >= builderLogos.length}
+                >
                   <img src={builderAsset(logo.file)} alt={index < builderLogos.length ? logo.name : ""} />
                   <span>{logo.name}</span>
                 </div>
